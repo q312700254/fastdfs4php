@@ -9,7 +9,7 @@ namespace FastDFS\Builder;
 
 use FastDFS\Interfaces\Builder;
 
-class TarckerBuilder implements Builder
+class TrackerBuilder implements Builder
 {
     protected static $_instance;
 
