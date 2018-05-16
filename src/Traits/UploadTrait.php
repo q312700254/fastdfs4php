@@ -30,7 +30,7 @@ trait UploadTrait
      * @param string $group_name
      * @return string
      */
-    public function storage_upload_by_filename1(string $local_filename, string $file_ext_name = '', array $meta_list = [] string $group_name = ''):string
+    public function storage_upload_by_filename1(string $local_filename, string $file_ext_name = '', array $meta_list = [], string $group_name = ''):string
     {
         return $this->fastDFS->storage_upload_by_filename1($local_filename, $file_ext_name, $meta_list, $group_name, $this->tracker, $this->storage);
     }
