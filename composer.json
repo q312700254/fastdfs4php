@@ -1,6 +1,6 @@
 {
     "name": "llwch/fastfds4php",
-    "description": "fastFDS client FOR PHP",
+    "description": "fastFDS client for PHP",
     "type": "library",
     "license": "MIT",
     "authors": [
