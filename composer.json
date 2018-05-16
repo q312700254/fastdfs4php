@@ -1,0 +1,31 @@
+{
+    "name": "llwch/fastfds4php",
+    "description": "fastFDS FOR PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wuchao",
+            "email": "qng3344@vip.qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "fastFDS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AliyunCs\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
