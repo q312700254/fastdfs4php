@@ -1,2 +1,2 @@
 # fastfds4php
-fastFDS client FOR PHP
+fastDFS client FOR PHP
