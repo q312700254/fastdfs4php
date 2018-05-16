@@ -25,16 +25,30 @@ class FastDFSClient
         $this->storage = $this->tracker_query_storage_store();
     }
 
-    public function connect_server($host, $port):array
+    /**
+     * 连接服务器
+     * @return array
+     */
+    public function connect_server():array
     {
-        return $this->fastDFS->connect_server($host, $port);
+        return $this->fastDFS->connect_server($this->tracker['ip_addr'], $this->tracker['port']);
     }
 
+    /**
+     * 断开连接
+     * @param $server
+     * @return bool
+     */
     public function disconnect_server($server):bool
     {
         return $this->fastDFS->disconnect_server($server);
     }
 
+    /**
+     * 测试服务器
+     * @param array $server_info
+     * @return bool
+     */
     public function active_test(array $server_info):bool
     {
         return $this->fastDFS->active_test($server_info);
