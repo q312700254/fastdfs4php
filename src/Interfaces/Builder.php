@@ -5,7 +5,7 @@
  * Date: 2018/5/16
  * Time: 12:10
  */
-namespace FastDFS\Interfase;
+namespace FastDFS\Interfaces;
 
 interface Builder
 {
