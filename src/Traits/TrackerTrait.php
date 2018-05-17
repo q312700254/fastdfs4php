@@ -13,7 +13,7 @@ trait TrackerTrait
      * 获取一个tracker server连接
      * @return bool
      */
-    public function tracker_get_connection():bool
+    public function tracker_get_connection():array
     {
         return $this->fastDFS->tracker_get_connection();
     }
