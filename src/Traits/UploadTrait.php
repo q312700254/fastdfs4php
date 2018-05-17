@@ -36,7 +36,7 @@ trait UploadTrait
     }
 
     /**
-     * 根据文件内容上传文件到服务器
+     * 根据文件内容上传文件到服务器,返回数组
      * @param string $file_buff
      * @param string $file_ext_name
      * @param array $meta_list
@@ -46,6 +46,19 @@ trait UploadTrait
     public function storage_upload_by_filebuff(string $file_buff, string $file_ext_name = '', array $meta_list = [], string $group_name = ''):array
     {
         return $this->fastDFS->storage_upload_by_filebuff($file_buff, $file_ext_name, $meta_list, $group_name, $this->tracker, $this->storage);
+    }
+
+    /**
+     * 根据文件内容上传文件到服务器,返回字符串（文件路径）
+     * @param string $file_buff
+     * @param string $file_ext_name
+     * @param array $meta_list
+     * @param string $group_name
+     * @return string
+     */
+    public function storage_upload_by_filebuff1(string $file_buff, string $file_ext_name = '', array $meta_list = [], string $group_name = ''):string
+    {
+        return $this->fastDFS->storage_upload_by_filebuff1($file_buff, $file_ext_name, $meta_list, $group_name, $this->tracker, $this->storage);
     }
 
     /**
