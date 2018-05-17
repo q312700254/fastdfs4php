@@ -20,7 +20,7 @@ class FastDFSBuilder implements Builder
     public static function getInstance($host = '', $port = '')
     {
         // TODO: Implement getInstance() method.
-        if (class_exists('FastDFS'))
+        if (!class_exists('FastDFS'))
             throw new FastDFSException('Do not support fastFDS');
 
         if (false == (static::$_instance instanceof static)) {
