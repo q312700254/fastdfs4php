@@ -25,6 +25,11 @@ class FastDFSClient
         $this->storage = $this->tracker_query_storage_store();
     }
 
+    public function __destruct()
+    {
+        $this->fastDFS->tracker_close_all_connections();
+    }
+
     /**
      * 连接服务器
      * @return array
